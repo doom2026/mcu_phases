@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Saga</title>
+    <link rel="stylesheet" href="marvel.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="heading">
+        <div class="slide">
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+            <div class="image4"></div>
+            <div class="image5"></div>
+            <div class="image6"></div>
+        </div>
+    </div>
+    <div id="option"></div>
+    <div id="option">
+        <button class="img-btn" onclick="location.href='infinity.html'">
+            <img src="infinity.jpg" alt="Infinity">
+        </button>
+        <button class="img-btn" onclick="location.href='multiverse.html'">
+            <img src="multiverse.jpg" alt="Captain America">
+        </button>
+        <button class="img-btn"  onclick="showComingSoon()">
+            <img src="mutant.jpg" alt="mutant">
+
+        </button>
+        <button class="img-btn"  onclick="showComingSoon()">
+            <img src="cosmic.jpg" alt="cosmic">
+        </button>
+    </div>
+    <script>
+        function showComingSoon() {
+            const popup = document.createElement("div");
+            popup.className = "coming-soon";
+            popup.innerText = "COMING SOON... 🔥";
+        
+            document.body.appendChild(popup);
+        
+            setTimeout(() => {
+                popup.classList.add("show");
+            }, 10);
+        
+            // Remove after 2.5 seconds
+            setTimeout(() => {
+                popup.classList.remove("show");
+                setTimeout(() => popup.remove(), 300);
+            }, 2500);
+        }
+        </script>
+        
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Gallery</title>
+    <link rel="stylesheet" href="marvel.css">
+</head>
+<body>
+    <h1>Infinity Saga</h1>
+    <div class="gallery">
+        <img src="S101.jpg" alt="Iron Man 1" onclick="searchGoogle(this)">
+        <img src="S102.jpg" alt="The Incredible Hulk"onclick="searchGoogle(this)">
+        <img src="S103.jpg" alt="Iron Man 2"onclick="searchGoogle(this)">
+        <img src="S104.jpg" alt="Thor"onclick="searchGoogle(this)">
+        <img src="S105.jpg" alt="Captain America First Avengers"onclick="searchGoogle(this)">
+        <img src="S106.jpg" alt="Avengers"onclick="searchGoogle(this)">
+        <img src="S107.jpg" alt="Iron Man 3"onclick="searchGoogle(this)">
+        <img src="S108.jpg" alt="Thor The Dark World"onclick="searchGoogle(this)">
+        <img src="S109.jpg" alt="Captain America Winter Soldier"onclick="searchGoogle(this)">
+        <img src="S110.jpg" alt="Gurdian Of The Galaxy"onclick="searchGoogle(this)">
+        <img src="S111.jpg" alt="Avengers Age Of Ultron"onclick="searchGoogle(this)">
+        <img src="S112.jpg" alt="Antman"onclick="searchGoogle(this)">
+        <img src="S113.jpg" alt="Captain America Civil War"onclick="searchGoogle(this)">
+        <img src="S114.jpg" alt="Doctor Strange"onclick="searchGoogle(this)">
+        <img src="S115.jpg" alt="Gurdian Of The Galaxy Vol 2"onclick="searchGoogle(this)">
+        <img src="S116.jpg" alt="Spiderman Homecoming"onclick="searchGoogle(this)">
+        <img src="S117.jpg" alt="Thor Ragnorok"onclick="searchGoogle(this)">
+        <img src="S118.jpg" alt="Black Panther"onclick="searchGoogle(this)">
+        <img src="S119.jpg" alt="Avengers Infinity War"onclick="searchGoogle(this)">
+        <img src="S120.jpg" alt="Antman And Wasp"onclick="searchGoogle(this)">
+        <img src="S121.jpg" alt="Captain Marvel"onclick="searchGoogle(this)">
+        <img src="S122.jpg" alt="Avengers Endgame"onclick="searchGoogle(this)">
+
+
+    </div>
+    <script>
+        function searchGoogle(image) {
+            const query = image.alt;
+            const url = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            window.open(url, "_blank");
+        }
+        </script>
+        
+</body>
+</html>
